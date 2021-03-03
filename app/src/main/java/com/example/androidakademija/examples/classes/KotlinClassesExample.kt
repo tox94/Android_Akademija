@@ -5,7 +5,7 @@ import java.io.Serializable
 open class Person constructor(
     val firstName: String,
     val lastName: String,
-    val dateOfBirth: String,
+    val age: Int,
     val oib: Long
 ) : Serializable
 
@@ -17,18 +17,18 @@ class University(
 class Student(
     firstName: String,
     lastName: String,
-    dateOfBirth: String,
+    age: Int,
     oib: Long,
     private val jmbag: Int,
     val university: University
-) : Person(firstName, lastName, dateOfBirth, oib) {
+) : Person(firstName, lastName, age, oib) {
     fun getDetails() = "$firstName $lastName, $jmbag"
 }
 
 fun main() {
     val fer = University(123, "FER")
-    val studentA = Student("Pero", "Peric", "12.04.1998.", 123456789123, 1655238435, fer)
-    val studentB = Student("Ivana", "Horvat", "02.12.1999.", 987654987654, 1564654335, fer)
+    val studentA = Student("Pero", "Peric", 21, 123456789123, 1655238435, fer)
+    val studentB = Student("Ivana", "Horvat", 22, 987654987654, 1564654335, fer)
     println(studentA.getDetails())
     println(studentB.getDetails())
 }

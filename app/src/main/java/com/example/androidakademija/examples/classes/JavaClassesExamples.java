@@ -7,13 +7,13 @@ public class JavaClassesExamples {
     static class Person implements Serializable {
         private final String firstName;
         private final String lastName;
-        private final String dateOfBirth;
+        private final int age;
         private final Long oib;
 
-        public Person(String firstName, String lastName, String dateOfBirth, Long oib) {
+        public Person(String firstName, String lastName, int age, Long oib) {
             this.firstName = firstName;
             this.lastName = lastName;
-            this.dateOfBirth = dateOfBirth;
+            this.age = age;
             this.oib = oib;
         }
 
@@ -25,8 +25,8 @@ public class JavaClassesExamples {
             return lastName;
         }
 
-        public String getDateOfBirth() {
-            return dateOfBirth;
+        public int getAge() {
+            return age;
         }
 
         public Long getOib() {
@@ -56,8 +56,8 @@ public class JavaClassesExamples {
         private final Long jmbag;
         private final University university;
 
-        public Student(String firstName, String lastName, String dateOfBirth, Long oib, Long jmbag, University university) {
-            super(firstName, lastName, dateOfBirth, oib);
+        public Student(String firstName, String lastName, int age, Long oib, Long jmbag, University university) {
+            super(firstName, lastName, age, oib);
             this.jmbag = jmbag;
             this.university = university;
         }
@@ -77,8 +77,8 @@ public class JavaClassesExamples {
 
     public static void main(String[] args) {
         University fer = new University(123, "FER");
-        Student studentA = new Student("Pero", "Peric", "12.04.1998.", 123456789123L, 1655238435L, fer);
-        Student studentB = new Student("Ivana", "Horvat", "02.12.1999.", 987654987654L, 1564654335L, fer);
+        Student studentA = new Student("Pero", "Peric", 21, 123456789123L, 1655238435L, fer);
+        Student studentB = new Student("Ivana", "Horvat", 22, 987654987654L, 1564654335L, fer);
         System.out.println(studentA.getDetails());
         System.out.println(studentB.getDetails());
     }
