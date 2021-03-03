@@ -1,9 +1,12 @@
 package com.example.androidakademija.examples.variables
 
+import android.annotation.SuppressLint
+
 var x = 10
 var y:Int=20
 var n = 0.4
 
+@SuppressLint("DefaultLocale")
 fun main() {
 
     x++
@@ -11,6 +14,15 @@ fun main() {
 
     val stringX = "x = " + x
     val stringY = "y = " + y
+
+    val s = "test string"
+
+    println(s)
+    println(s.toUpperCase())
+    for (character in s) {
+        println(character)
+    }
+    println(s)
 
     println(stringX)
     println(stringY)
