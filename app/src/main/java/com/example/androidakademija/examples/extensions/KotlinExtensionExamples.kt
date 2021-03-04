@@ -3,6 +3,7 @@ package com.example.androidakademija.examples.extensions
 import com.example.androidakademija.examples.classes.Student
 import com.example.androidakademija.examples.classes.University
 
+/** Extension function for custom print */
 fun Student.printDetails() {
     println("First name = ${this.firstName}")
     println("Last name = ${this.lastName}")
@@ -10,10 +11,13 @@ fun Student.printDetails() {
     println("University = ${this.university.name}")
 }
 
+/** Extension function for determining the length of last name
+ * @param limit - highest allowed value */
 fun Student.hasLongLastName(limit: Int): Boolean {
     return this.lastName.length > limit
 }
 
+/** Extension variable that tells whether the student is under aged */
 val Student.isUnderAged: Boolean
     get() {
         return this.age < 18

@@ -17,34 +17,41 @@ fun Person.getDetails(): String {
 }
 
 fun main() {
+    // prints the contents of the list
     for (person in peopleList) {
         println(person.getDetails())
     }
 
+    // sorts the list by age and prints the contents
 //    val sortedList = peopleList.sortedBy { it.age }
 //    for (person in sortedList) {
 //        println(person.getDetails())
 //    }
 //
+    // filters the list by age
 //    val olderThanTwenty = peopleList.filter { it.age > 20 }
 //    for (person in olderThanTwenty) {
 //        println(person.getDetails())
 //    }
 //
+    // filters the list by the contents of oib
 //    val haveTwoInOib = peopleList.filter { it.oib.toString().contains("2") }
 //    for (person in haveTwoInOib) {
 //        println(person.getDetails())
 //    }
 
+    // prints the contents of the map
 //    for (entry in simpleMap) {
 //        println("${entry.key} -> ${entry.value}")
 //    }
 //
+    // prints the sorted map
 //    val sorted = simpleMap.toSortedMap()
 //    for (entry in sorted) {
 //        println("${entry.key} -> ${entry.value}")
 //    }
 //
+    // prints the map filtered by the key values
 //    val largerThan3 = simpleMap.filter { it.key > 3 }
 //    for (entry in largerThan3) {
 //        println("${entry.key} -> ${entry.value}")

@@ -3,17 +3,18 @@ package com.example.androidakademija.examples.variables
 import android.annotation.SuppressLint
 
 var x = 10
-var y:Int=20
+var y: Int = 20
 var n = 0.4
 
 @SuppressLint("DefaultLocale")
 fun main() {
 
     x++
-    y-=3
+    y -= 3
 
-    val stringX = "x = " + x
-    val stringY = "y = " + y
+    // examples of default values used in strings
+    val stringX = "x = $x"
+    val stringY = "y = $y"
 
     val s = "test string"
 
@@ -31,8 +32,10 @@ fun main() {
 
     println("k = $k")
 
-//    println("x + y = ${x+y}")
+    // examples of a default function used in a string
+    println("x + y = ${x+y}")
 
-//    val z = 5
-//    z += 5
+    val z = 5
+    // this can not compile because z is a val, which means its value is final
+    z += 5
 }
