@@ -34,7 +34,7 @@ fun main() {
     }
 
     // This can not compile because the compiler knows that s2 can be null, comment it out and run afterwards
-    println("Length = ${s2.length}}")
+//    println("Length = ${s2.length}}")
     // This is an example that can cause a Null Pointer Exception, run to see the effects
     println("Length = ${s2!!.length}}")
 }
