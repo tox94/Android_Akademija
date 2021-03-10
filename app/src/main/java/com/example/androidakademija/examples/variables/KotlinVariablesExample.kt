@@ -37,5 +37,5 @@ fun main() {
 
     val z = 5
     // this can not compile because z is a val, which means its value is final
-    z += 5
+//    z += 5
 }
