@@ -4,4 +4,17 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="create_person">Create a new person</string>
+    <string name="first_name">First name</string>
+    <string name="pero">Pero</string>
+    <string name="last_name">Last name</string>
+    <string name="peric">Peric</string>
+    <string name="age">Age</string>
+    <string name="number_twenty" translatable="false">20</string>
+    <string name="oib">OIB</string>
+    <string name="title_list">PersonList</string>
+    <string name="title_contacts">Contacts</string>
+    <string name="title_add">Add</string>
+    <string name="contacts">Contacts</string>
+    <string name="add">Add</string>
 </resources>
