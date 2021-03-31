@@ -2,6 +2,7 @@ package com.example.androidakademija.main.viewmodels
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.example.androidakademija.main.model.Gender
 import com.example.androidakademija.main.model.Person
 
 class MainActivityViewModel: ViewModel() {
@@ -10,10 +11,38 @@ class MainActivityViewModel: ViewModel() {
 
     init {
         peopleList.value = arrayListOf(
-            Person("Pero", "Peric", 22, 123123123123),
-            Person("Ivana", "Kovacevic", 21, 456456456456),
-            Person("Josip", "Horvat", 19, 789789789789),
-            Person("Ivona", "Kovac", 20, 321321321321)
+            Person(
+                "https://api.sofascore.com/api/v1/team/7135/image",
+                "Pero",
+                "Peric",
+                22,
+                123123123123,
+                Gender.MALE
+            ),
+            Person(
+                "https://upload.wikimedia.org/wikipedia/commons/d/d9/Lionel_Messi_20180626_%28cropped%29.jpg",
+                "Ivana",
+                "Kovacevic",
+                21,
+                456456456456,
+                Gender.FEMALE
+            ),
+            Person(
+                "https://www.sofascore.com/static/images/apple-icon-180x180.png",
+                "Josip",
+                "Horvat",
+                19,
+                789789789789,
+                Gender.MALE
+            ),
+            Person(
+                "https://www.sofascore.com/static/images/apple-icon-180x180.png",
+                "Ivona",
+                "Kovac",
+                20,
+                321321321321,
+                Gender.FEMALE
+            )
         )
     }
 
