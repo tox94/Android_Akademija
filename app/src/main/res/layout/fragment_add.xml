@@ -9,108 +9,67 @@
     android:layout_marginEnd="24dp"
     tools:context=".main.ui.home.AddPersonFragment">
 
-    <TextView
-        android:id="@+id/headerTextView"
+    <com.example.androidakademija.main.ui.views.EditStringText
+        android:id="@+id/edit_image_url"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ellipsize="end"
-        android:maxLines="1"
-        android:text="@string/create_person"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
+        app:textViewText="@string/image_url"
+        app:editTextHint="@string/hint_url"
+        app:dataType="0"
+        app:dataLength="50"
+        app:errorText="@string/error_image_url"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/firstNameTextView"
+    <com.example.androidakademija.main.ui.views.EditStringText
+        android:id="@+id/edit_string_first_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:ellipsize="end"
-        android:maxLines="1"
-        android:text="@string/first_name"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/headerTextView" />
+        app:textViewText="@string/first_name"
+        app:editTextHint="@string/pero"
+        app:dataType="0"
+        app:dataLength="20"
+        app:errorText="@string/error_first_name"
+        app:layout_constraintTop_toBottomOf="@id/edit_image_url" />
 
-    <EditText
-        android:id="@+id/editTextFirstName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:ems="10"
-        android:hint="@string/pero"
-        android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/firstNameTextView" />
-
-    <TextView
-        android:id="@+id/lastNameTextView"
+    <com.example.androidakademija.main.ui.views.EditStringText
+        android:id="@+id/edit_string_last_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:ellipsize="end"
-        android:maxLines="1"
-        android:text="@string/last_name"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editTextFirstName" />
+        app:textViewText="@string/last_name"
+        app:editTextHint="@string/peric"
+        app:dataType="0"
+        app:dataLength="20"
+        app:errorText="@string/error_last_name"
+        app:layout_constraintTop_toBottomOf="@id/edit_string_first_name" />
 
-    <EditText
-        android:id="@+id/editTextLastName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:ems="10"
-        android:hint="@string/peric"
-        android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/lastNameTextView" />
-
-    <TextView
-        android:id="@+id/ageTextView"
+    <com.example.androidakademija.main.ui.views.EditStringText
+        android:id="@+id/edit_string_age"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:ellipsize="end"
-        android:maxLines="1"
-        android:text="@string/age"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editTextLastName" />
+        app:textViewText="@string/age"
+        app:editTextHint="@string/number_twenty"
+        app:dataType="1"
+        app:dataLength="150"
+        app:errorText="@string/error_age"
+        app:layout_constraintTop_toBottomOf="@id/edit_string_last_name" />
 
-    <EditText
-        android:id="@+id/editTextAge"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:ems="10"
-        android:hint="@string/number_twenty"
-        android:inputType="number"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ageTextView" />
-
-    <TextView
-        android:id="@+id/oibTextView"
+    <com.example.androidakademija.main.ui.views.EditStringText
+        android:id="@+id/edit_string_oib"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:ellipsize="end"
-        android:maxLines="1"
-        android:text="@string/oib"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editTextAge" />
+        app:textViewText="@string/oib"
+        app:editTextHint="@string/oib_hint"
+        app:dataType="2"
+        app:dataLength="13"
+        app:errorText="@string/error_oib"
+        app:layout_constraintTop_toBottomOf="@id/edit_string_age" />
 
-    <EditText
-        android:id="@+id/editTextOib"
-        android:layout_width="wrap_content"
+    <include
+        android:id="@+id/radio_group"
+        layout="@layout/radio_group"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:ems="10"
-        android:inputType="number"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/oibTextView" />
+        app:layout_constraintTop_toBottomOf="@id/edit_string_oib"/>
 
     <Button
         android:id="@+id/button_add"
@@ -118,7 +77,7 @@
         android:layout_height="wrap_content"
         android:textAllCaps="true"
         android:text="@string/add"
-        app:layout_constraintTop_toBottomOf="@id/editTextOib"
+        app:layout_constraintTop_toBottomOf="@id/radio_group"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp" />
