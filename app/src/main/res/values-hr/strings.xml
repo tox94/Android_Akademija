@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Android Akademija</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="create_person">Kreiraj novi kontakt</string>
+    <string name="image_url">Url slike</string>
+    <string name="hint_url">https://www.sofascore.com/static/images/apple-icon-180x180.png</string>
+    <string name="first_name">Ime</string>
+    <string name="pero">Pero</string>
+    <string name="last_name">Prezime</string>
+    <string name="peric">Peric</string>
+    <string name="age">Dob</string>
+    <string name="number_twenty" translatable="false">20</string>
+    <string name="oib">OIB</string>
+    <string name="oib_hint">1234567891234</string>
+    <string name="title_list">Lista kontakata</string>
+    <string name="title_contacts">Moji kontakti</string>
+    <string name="title_add">Dodaj novi kontakt</string>
+    <string name="contacts">Moji kontakti</string>
+    <string name="add">Dodaj kontakt</string>
+    <string name="years">%1$d godina</string>
+    <string name="gender_male">Muškarac</string>
+    <string name="gender_male_short">M</string>
+    <string name="gender_female_short">Ž</string>
+    <string name="gender_other_short">O</string>
+    <string name="gender_female">Žena</string>
+    <string name="gender_other">Ostalo</string>
+    <string name="error_image_url">Url ne smije biti duži od 50 znakova</string>
+    <string name="error_first_name">Ime ne smije biti duže od 20 znakova</string>
+    <string name="error_last_name">Prezime ne smije biti duže od 20 znakova</string>
+    <string name="error_age">Dob ne smije biti veća od 150</string>
+    <string name="error_oib">OIB mora imati 13 znamenki</string>
+    <string name="title_settings">Postavke</string>
+    <string name="language_en">Engleski</string>
+    <string name="language_hr">Hrvatski</string>
+    <string name="choose_app_language">Odaberite jezik aplikacije</string>
+    <string name="title_activity_contact">Kontakt Activity</string>
+</resources>
